@@ -1,0 +1,11 @@
+<div class="container m-3">
+  <button class="btn btn-dark mb-3" type="button" (click)="getUsers()">
+    Get User
+  </button>
+
+  <div *ngFor="let user of uList">
+  <p>
+    Name: {{user.name}}, Group: {{user.group}}
+  </p>
+</div>
+</div>
